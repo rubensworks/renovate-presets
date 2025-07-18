@@ -40,6 +40,10 @@
       "groupName": "LDF server monorepo packages"
     },
     {
+      "matchSourceUrlPrefixes": ["https://github.com/rubensworks/jbr.js"],
+      "groupName": "jbr monorepo packages"
+    },
+    {
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "patch"],
       "matchCurrentVersion": "!/^0/",
