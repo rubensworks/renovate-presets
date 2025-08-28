@@ -1,6 +1,7 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    "docker:enableMajor"
   ],
   "description": "My personal preferences for Renovate. It will make sure that major updates always go via a PR, and other changes will be auto-merged if tests pass. Dependencies will be checked every morning.",
 
@@ -61,10 +62,9 @@
     "rangeStrategy": "replace"
   },
 
-  "dockerfile": {
-    "enabled": false
-  },
   "github-actions": {
-    "enabled": false
+      "major": {
+          "enabled": true
+      }
   }
 }
