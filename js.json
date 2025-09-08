@@ -55,6 +55,16 @@
       "matchDepTypes": ["devDependencies"],
       "automerge": true,
       "automergeType": "branch"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
+      "matchManagers": ["docker"],
+      "automerge": true,
+      "automergeType": "branch"
     }
   ],
   
