@@ -37,6 +37,10 @@
       "groupName": "Comunica monorepo packages"
     },
     {
+      "matchSourceUrlPrefixes": ["https://github.com/comunica/traqula"],
+      "groupName": "Traqula monorepo packages"
+    },
+    {
       "matchSourceUrlPrefixes": ["https://github.com/LinkedDataFragments/Server.js"],
       "groupName": "LDF server monorepo packages"
     },
