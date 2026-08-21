@@ -69,6 +69,12 @@
       "matchManagers": ["docker"],
       "automerge": true,
       "automergeType": "branch"
+    },
+    {
+      "description": "Only create PRs for major and minor Docker image updates, and ignore patch releases to reduce PR noise.",
+      "matchDatasources": ["docker"],
+      "matchUpdateTypes": ["patch"],
+      "enabled": false
     }
   ],
   

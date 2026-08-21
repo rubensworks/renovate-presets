@@ -5,6 +5,7 @@ This is a repository for reusable configs for the [Renovate](https://renovate.wh
 ## JavaScript Preset
 
 Makes sure that major updates always go via a PR, and other changes will be auto-merged if tests pass. Dependencies will be checked every morning.
+Docker image updates are only proposed for major and minor version bumps; patch releases are skipped to avoid a PR for every patch.
 
 To use this, create `renovate.json` in your repo with the following contents:
 ```json
