@@ -66,10 +66,16 @@
       "automergeType": "branch"
     },
     {
-      "description": "Only create PRs for major and minor Docker image updates, and ignore patch releases to reduce PR noise.",
+      "description": "Ignore Docker image patch releases, as they would otherwise cause too many updates.",
       "matchDatasources": ["docker"],
       "matchUpdateTypes": ["patch"],
       "enabled": false
+    },
+    {
+      "description": "Automerge the remaining (non-patch) Docker image updates.",
+      "matchDatasources": ["docker"],
+      "automerge": true,
+      "automergeType": "branch"
     }
   ],
   
