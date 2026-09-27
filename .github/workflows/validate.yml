@@ -1,0 +1,16 @@
+name: "Validate"
+on: [push, pull_request]
+
+jobs:
+  validate:
+    name: Validate presets
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v7
+      - name: 'Validate Renovate presets'
+        uses: suzuki-shunsuke/github-action-renovate-config-validator@v2.2.0
+        with:
+          # Not strict yet, as js.json still uses options that Renovate wants migrated.
+          strict: "false"
+          config_file_path: js.json
